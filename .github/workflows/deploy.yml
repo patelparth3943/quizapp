@@ -1,0 +1,34 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Server
+        run: |
+          ssh user@your-server-ip-address 'mkdir -p /path/to/deployment/directory'
+          rsync -r --delete-after --quiet $GITHUB_WORKSPACE/dist/ user@your-server-ip-address:/path/to/deployment/directory
+          ssh user@your-server-ip-address 'sudo systemctl restart your-app-service'
+
+      - name: Notify Deployment Status
+        run: echo 'Deployment successful!'
