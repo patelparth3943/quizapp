@@ -26,9 +26,13 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh user@your-server-ip-address 'mkdir -p /path/to/deployment/directory'
-          rsync -r --delete-after --quiet $GITHUB_WORKSPACE/dist/ user@your-server-ip-address:/path/to/deployment/directory
-          ssh user@your-server-ip-address 'sudo systemctl restart your-app-service'
+          ssh deployuser@192.168.244.161 'mkdir -p /var/www/quizapp'
+          rsync -r --delete-after --quiet $GITHUB_WORKSPACE/dist/ deployuser@192.168.244.161:/var/www/quizapp
+          ssh deployuser@192.168.244.161 'sudo systemctl restart quizapp-service'
+
+          ssh user@ 'mkdir -p /path/to/deployment/directory'
+          rsync -r --delete-after --quiet $GITHUB_WORKSPACE/dist/ user@192.168.244.161:/path/to/deployment/directory
+          ssh user@192.168.244.161 'sudo systemctl restart your-app-service'
 
       - name: Notify Deployment Status
         run: echo 'Deployment successful!'
