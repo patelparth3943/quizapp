@@ -1,0 +1,234 @@
+{
+    "quiz": [
+      {
+        "id": 1,
+        "title": "Frontend Quiz",
+        "icon": "./src/assets/images/icon-html.svg",
+        "description": "Test your frontend development knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "text": "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
+            "choices": [
+              {
+                "text": "A. 4.5:1"
+              },
+              {
+                "text": "B. 3:1"
+              },
+              {
+                "text": "C. 2.5:1"
+              },
+              {
+                "text": "D. 5:1"
+              }
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "text": "What is the purpose of a doctype declaration in HTML?",
+            "choices": [
+              {
+                "text": "A. To link to an external CSS file"
+              },
+              {
+                "text": "B. To declare the document type and version"
+              },
+              {
+                "text": "C. To provide metadata about the document"
+              },
+              {
+                "text": "D. To link to a JavaScript file"
+              }
+            ],
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "HTML",
+        "icon": "./src/assets/images/icon-html.svg",
+        "description": "Test your HTML knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "text": "Which HTML element is used to define important text?",
+            "choices": [
+              {
+                "text": "A. <strong>"
+              },
+              {
+                "text": "B. <b>"
+              },
+              {
+                "text": "C. <important>"
+              },
+              {
+                "text": "D. <i>"
+              }
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "text": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+            "choices": [
+              {
+                "text": "A. title"
+              },
+              {
+                "text": "B. src"
+              },
+              {
+                "text": "C. alt"
+              },
+              {
+                "text": "D. longdesc"
+              }
+            ],
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "CSS",
+        "icon": "./src/assets/images/icon-css.svg",
+        "description": "Test your CSS knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "text": "Which property is used to change the background color?",
+            "choices": [
+              {
+                "text": "A. bgcolor"
+              },
+              {
+                "text": "B. background-color"
+              },
+              {
+                "text": "C. color"
+              },
+              {
+                "text": "D. background"
+              }
+            ],
+            "answer": "B"
+          },
+          {
+            "id": 2,
+            "text": "Which property is used to change the font of an element?",
+            "choices": [
+              {
+                "text": "A. font-weight"
+              },
+              {
+                "text": "B. font-style"
+              },
+              {
+                "text": "C. font-family"
+              },
+              {
+                "text": "D. font-variant"
+              }
+            ],
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "JavaScript",
+        "icon": "./src/assets/images/icon-js.svg",
+        "description": "Test your JavaScript knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "text": "Which company developed JavaScript?",
+            "choices": [
+              {
+                "text": "A. Netscape"
+              },
+              {
+                "text": "B. Microsoft"
+              },
+              {
+                "text": "C. Google"
+              },
+              {
+                "text": "D. Apple"
+              }
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "text": "Which of the following is not a reserved word in JavaScript?",
+            "choices": [
+              {
+                "text": "A. interface"
+              },
+              {
+                "text": "B. throws"
+              },
+              {
+                "text": "C. program"
+              },
+              {
+                "text": "D. short"
+              }
+            ],
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Accessibility",
+        "icon": "./src/assets/images/icon-accessibility.svg",
+        "description": "Test your web accessibility knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "text": "What does WCAG stand for?",
+            "choices": [
+              {
+                "text": "A. Web Content Accessibility Guidelines"
+              },
+              {
+                "text": "B. Web Coding Accessibility Guide"
+              },
+              {
+                "text": "C. World Content Accessibility Guide"
+              },
+              {
+                "text": "D. World Coding Accessibility Guidelines"
+              }
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "text": "Which ARIA attribute is used to define a button?",
+            "choices": [
+              {
+                "text": "A. aria-button"
+              },
+              {
+                "text": "B. role=\"button\""
+              },
+              {
+                "text": "C. aria-role=\"button\""
+              },
+              {
+                "text": "D. role-button"
+              }
+            ],
+            "answer": "B"
+          }
+        ]
+      }
+    ]
+  }
