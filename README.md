@@ -13,4 +13,3 @@ Play again to choose another subject
 View the optimal layout for the interface depending on their device's screen size
 See hover and focus states for all interactive elements on the page
 Navigate the entire app only using their keyboard
-Bonus: Change the app's theme between light and dark
